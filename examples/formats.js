@@ -5,7 +5,7 @@
 
 var ProgressBar = require('../');
 
-var bar = new ProgressBar(':bar :title', { total: 10 });
+var bar = new ProgressBar('  :bar :title', { total: 10 });
 
 console.log();
 var id = setInterval(function(){
