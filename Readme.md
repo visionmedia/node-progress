@@ -9,16 +9,16 @@
    as well as the `total`, telling the progress bar when it will
    be considered complete. After that all we need to do is `tick()` appropriately. 
 
-   var ProgressBar = require('progress');
+       var ProgressBar = require('progress');
    
-   var bar = new ProgressBar(':bar', { total: 10 });
-   var timer = setInterval(function(){
-     bar.tick();
-     if (bar.complete) {
-       console.log('\ncomplete\n');
-       clearInterval(timer);
-     }
-   }, 100);
+       var bar = new ProgressBar(':bar', { total: 10 });
+       var timer = setInterval(function(){
+         bar.tick();
+         if (bar.complete) {
+           console.log('\ncomplete\n');
+           clearInterval(timer);
+         }
+       }, 100);
 
 ## Options:
 
