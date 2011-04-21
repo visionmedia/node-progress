@@ -7,12 +7,11 @@ var ProgressBar = require('../');
 
 var bar = new ProgressBar(':bar :title', { total: 10 });
 
-console.log('processing:');
+console.log();
 var id = setInterval(function(){
   var randomTitle = ['some', 'random', 'title'][Math.random() * 3 | 0];
   bar.tick({ title: randomTitle });
   if (bar.complete) {
-    console.log('\ncomplete\n');
     clearInterval(id);
     bar2();
   }
@@ -28,7 +27,6 @@ function bar2() {
   var id = setInterval(function(){
     bar.tick();
     if (bar.complete) {
-      console.log('\n');
       clearInterval(id);
       bar3();
     }
@@ -46,7 +44,6 @@ function bar3() {
   var id = setInterval(function(){
     bar.tick();
     if (bar.complete) {
-      console.log('\n');
       clearInterval(id);
       bar4();
     }
@@ -61,7 +58,6 @@ function bar4() {
   var id = setInterval(function(){
     bar.tick();
     if (bar.complete) {
-      console.log('\n');
       clearInterval(id);
       bar5();
     }
@@ -77,7 +73,6 @@ function bar5() {
   var id = setInterval(function(){
     bar.tick();
     if (bar.complete) {
-      console.log('\n');
       clearInterval(id);
     }
   }, 300);
