@@ -5,11 +5,12 @@
 
 var ProgressBar = require('../');
 
-var bar = new ProgressBar(':bar', { total: 10 });
+var bar = new ProgressBar(':bar :title', { total: 10 });
 
 console.log('processing:');
 var id = setInterval(function(){
-  bar.tick();
+  var randomTitle = ['some', 'random', 'title'][Math.random() * 3 | 0];
+  bar.tick({ title: randomTitle });
   if (bar.complete) {
     console.log('\ncomplete\n');
     clearInterval(id);
