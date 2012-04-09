@@ -1,4 +1,3 @@
-
 # node-progress
 
   Flexible ascii progress bar
