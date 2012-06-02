@@ -1,4 +1,3 @@
-
 # node-progress
 
   Flexible ascii progress bar
@@ -9,16 +8,18 @@
    as well as the `total`, telling the progress bar when it will
    be considered complete. After that all we need to do is `tick()` appropriately. 
 
-       var ProgressBar = require('progress');
-   
-       var bar = new ProgressBar(':bar', { total: 10 });
-       var timer = setInterval(function(){
-         bar.tick();
-         if (bar.complete) {
-           console.log('\ncomplete\n');
-           clearInterval(timer);
-         }
-       }, 100);
+```javascript
+var ProgressBar = require('progress');
+
+var bar = new ProgressBar(':bar', { total: 10 });
+var timer = setInterval(function(){
+bar.tick();
+  if (bar.complete) {
+    console.log('\ncomplete\n');
+    clearInterval(timer);
+  }
+}, 100);
+```
 
 ## Options:
 
@@ -42,47 +43,51 @@
 
   In our download example each tick has a variable influence, so we pass the chunk length which adjusts the progress bar appropriately relative to the total length. 
 
-      var ProgressBar = require('../')
-        , https = require('https');
+```javascript
+var ProgressBar = require('../')
+  , https = require('https');
 
-      var req = https.request({
-          host: 'download.github.com'
-        , port: 443
-        , path: '/visionmedia-node-jscoverage-0d4608a.zip'
-      });
+var req = https.request({
+    host: 'download.github.com'
+  , port: 443
+  , path: '/visionmedia-node-jscoverage-0d4608a.zip'
+});
 
-      req.on('response', function(res){
-        var len = parseInt(res.headers['content-length'], 10);
+req.on('response', function(res){
+  var len = parseInt(res.headers['content-length'], 10);
 
-        console.log();
-        var bar = new ProgressBar('  downloading [:bar] :percent :etas', {
-            complete: '='
-          , incomplete: ' '
-          , width: 20
-          , total: len
-        });
+  console.log();
+  var bar = new ProgressBar('  downloading [:bar] :percent :etas', {
+      complete: '='
+    , incomplete: ' '
+    , width: 20
+    , total: len
+  });
 
-        res.on('data', function(chunk){
-          bar.tick(chunk.length);
-        });
+  res.on('data', function(chunk){
+    bar.tick(chunk.length);
+  });
 
-        res.on('end', function(){
-          console.log('\n');
-        });
-      });
+  res.on('end', function(){
+    console.log('\n');
+  });
+});
 
-      req.end();
+req.end();
+```
 
   The code above will generate a progress bar that looks like this:
-  
-      downloading [=====             ] 29% 3.7s
+
+```
+downloading [=====             ] 29% 3.7s
+```
 
 
 ## License 
 
 (The MIT License)
 
-Copyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+Copyright (c) 2011 TJ Holowaychuk `&lt;tj@vision-media.ca&gt;`
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
