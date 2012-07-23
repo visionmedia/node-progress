@@ -2,6 +2,10 @@
 
   Flexible ascii progress bar
 
+## Installation
+
+    npm install progress
+
 ## Usage
 
    First we create a `ProgressBar`, giving it a format string
