@@ -1,4 +1,10 @@
 
+0.0.5 / 2012-08-07 
+==================
+
+  * add ability to tick by zero chunks - tick(0)
+  * fix ETA. Closes #4 [lwille]
+
 0.0.4 / 2011-11-14 
 ==================
 
