@@ -1,4 +1,11 @@
 
+0.1.0 / 2012-09-19 
+==================
+
+  * Fixed logic bug that caused bar to jump one extra space at the end [davglass]
+  * Working with readline impl, even on Windows [davglass]
+  * Using readline instead of the \r hack [davglass]
+
 0.0.5 / 2012-08-07 
 ==================
 
