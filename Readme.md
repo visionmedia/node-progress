@@ -31,6 +31,7 @@ bar.tick();
   - `stream` the output stream defaulting to stdout
   - `complete` completion character defaulting to "="
   - `incomplete` incomplete character defaulting to "-"
+  - `callback` called when complete with the progressbar its only argument.
 
 ## Tokens:
 
