@@ -1,4 +1,12 @@
 
+1.0.0 / 2013-06-18 
+==================
+
+ * remove .version
+ * >=. Closes #19
+ * Merge pull request #15 from davglass/readline-osx
+ * On OSX revert back to terminal hack to avoid a readline bug
+
 0.1.0 / 2012-09-19 
 ==================
 
