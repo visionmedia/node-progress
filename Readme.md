@@ -32,6 +32,7 @@ var timer = setInterval(function(){
   - `stream` the output stream defaulting to stdout
   - `complete` completion character defaulting to "="
   - `incomplete` incomplete character defaulting to "-"
+  - `hideAfter` {Boolean} hides the progress bar after completion
 
 ## Tokens:
 
