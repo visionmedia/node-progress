@@ -20,9 +20,8 @@ var bar = new ProgressBar('  downloading [:bar] :percent :etas', {
   if (contentLength) {
     var chunk = Math.random() * 10 * 1024;
     bar.tick(chunk);
-    if (bar.complete) {
-      console.log();
-    } else {
+
+    if (!bar.complete) {
       setTimeout(next, Math.random() * 1000);
     }
   }
