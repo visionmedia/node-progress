@@ -32,6 +32,7 @@ var timer = setInterval(function(){
   - `stream` the output stream defaulting to stdout
   - `complete` completion character defaulting to "="
   - `incomplete` incomplete character defaulting to "-"
+  - `clear` option to clear the bar on completion defaulting to false
 
 ## Tokens:
 
