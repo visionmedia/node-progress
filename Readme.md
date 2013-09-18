@@ -88,7 +88,7 @@ req.end();
 downloading [=====             ] 29% 3.7s
 ```
 
-You can see more examples in the `Examples` folder.
+You can see more examples in the `examples` folder.
 
 ## License
 
