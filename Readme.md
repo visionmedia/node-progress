@@ -34,6 +34,7 @@ var timer = setInterval(function(){
   - `incomplete` incomplete character defaulting to "-"
   - `clear` option to clear the bar on completion defaulting to false
   - `callback` optional function to call when the progress bar completes
+  - `busywaiting` optional feature, makes the progress bar a busy waiting bar that indicates progress
 
 ## Tokens:
 
