@@ -1,5 +1,5 @@
 var ProgressBar = require('../')
-  , bar         = new ProgressBar('[:bar]', {total:10, busywaiting:true})
+  , bar         = new ProgressBar('[:bar]  :percent :etas', {total:10, busywaiting:true})
   , timer;
 
 // as long as the program waits for a response
