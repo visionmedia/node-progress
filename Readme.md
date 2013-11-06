@@ -1,6 +1,6 @@
 # node-progress
 
-  Flexible ascii progress bar
+  Flexible ASCII progress bar
 
 ## Installation
 
@@ -95,7 +95,7 @@ You can see more examples in the `examples` folder.
 
 (The MIT License)
 
-Copyright (c) 2011 TJ Holowaychuk `&lt;tj@vision-media.ca&gt;`
+Copyright (c) 2011 TJ Holowaychuk `tj@vision-media.ca`
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
