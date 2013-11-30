@@ -33,6 +33,7 @@ var timer = setInterval(function(){
   - `complete` completion character defaulting to "="
   - `incomplete` incomplete character defaulting to "-"
   - `clear` option to clear the bar on completion defaulting to false
+  - `quiet` disables the progress bar defaulting to false unless stream isn't tty
   - `callback` optional function to call when the progress bar completes
 
 ## Tokens:
