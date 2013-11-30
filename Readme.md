@@ -29,7 +29,7 @@ var timer = setInterval(function(){
 
   - `total` total number of ticks to complete
   - `width` the displayed width of the progress bar defaulting to total
-  - `stream` the output stream defaulting to stdout
+  - `stream` the output stream defaulting to stderr
   - `complete` completion character defaulting to "="
   - `incomplete` incomplete character defaulting to "-"
   - `clear` option to clear the bar on completion defaulting to false
