@@ -1,8 +1,8 @@
 
 EXAMPLES = $(foreach EXAMPLE, $(wildcard examples/*.js), $(EXAMPLE))
-.PHONY: $(EXAMPLES)
 
 .PHONY: test
 test: $(EXAMPLES)
 
+.PHONY: $(EXAMPLES)
 $(EXAMPLES): ; node $@ && echo
