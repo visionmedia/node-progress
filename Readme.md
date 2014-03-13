@@ -1,4 +1,4 @@
-Flexible CLI ASCII progress bar for Node.js.
+Flexible ascii progress bar.
 
 ## Installation
 
