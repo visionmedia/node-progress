@@ -7,7 +7,6 @@ var ProgressBar = require('../');
 
 var bar = new ProgressBar('  :bar :title', { total: 10 });
 
-console.log();
 var id = setInterval(function(){
   var randomTitle = ['some', 'random', 'title'][Math.random() * 3 | 0];
   bar.tick({ title: randomTitle });

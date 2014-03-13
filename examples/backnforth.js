@@ -7,7 +7,7 @@
 
 var ProgressBar = require('../');
 
-var bar = new ProgressBar(':title [:bar] :percent', {
+var bar = new ProgressBar('  :title [:bar] :percent', {
     complete: '='
   , incomplete: ' '
   , width: 30
