@@ -1,3 +1,8 @@
+### 1.1.6 / 2014-06-16
+
+ * now prevents progress bar from exceeding TTY width by limiting its width to
+   the with of the TTY
+
 ### 1.1.5 / 2014-03-25
 
  * updated documentation and various other repo maintenance
