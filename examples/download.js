@@ -9,7 +9,7 @@ var ProgressBar = require('../');
 
 var contentLength = 128 * 1024;
 
-var bar = new ProgressBar('  downloading [:bar] :percent :etas', {
+var bar = new ProgressBar('  downloading [:bar] :percent :eta', {
     complete: '='
   , incomplete: ' '
   , width: 20
