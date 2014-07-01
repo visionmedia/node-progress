@@ -1,3 +1,8 @@
+### 1.1.7 / 2014-06-30
+
+ * fixed a bug that occurs when a progress bar attempts to draw itself
+   on a console with very few columns
+
 ### 1.1.6 / 2014-06-16
 
  * now prevents progress bar from exceeding TTY width by limiting its width to
