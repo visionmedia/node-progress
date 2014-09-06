@@ -37,6 +37,7 @@ These are keys in the options object you can pass to the progress bar along with
 - `incomplete` incomplete character defaulting to "-"
 - `clear` option to clear the bar on completion defaulting to false
 - `callback` optional function to call when the progress bar completes
+- `formatter` optional function that customizes conversion of tokens to output
 
 ### Tokens
 
