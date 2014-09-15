@@ -71,7 +71,7 @@ req.on('response', function(res){
   var len = parseInt(res.headers['content-length'], 10);
 
   console.log();
-  var bar = new ProgressBar('  downloading [:bar] :percent :etas', {
+  var bar = new ProgressBar('  downloading [:bar] :percent :eta', {
     complete: '=',
     incomplete: ' ',
     width: 20,
@@ -93,7 +93,7 @@ req.end();
 The above example result in a progress bar like the one below.
 
 ```
-downloading [=====             ] 29% 3.7s
+downloading [=====             ] 29% 3s
 ```
 
 You can see more examples in the `examples` folder.
