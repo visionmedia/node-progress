@@ -27,6 +27,23 @@ var timer = setInterval(function () {
 
 If you decide to use a infinite progress bar, you need to just use the `start` and `finish` methods as shown below.
 
+```javascript
+var ProgressBar = require('progress');
+
+var bar = new ProgressBar(':rotary :message :ellipsis', { infinite : true });
+
+bar.start({
+  message : 'Waiting for device',
+  tick : 200,
+  longWaitMessage : 'Please insert a device!',
+  longWaitTick : 2000
+});
+
+setTimeout(function() {
+  bar.finish();
+}, 6000);
+```
+
 ### Options
 
 These are keys in the options object you can pass to the progress bar along with
@@ -51,7 +68,7 @@ For infinite progress bar, the `start` method can receive the following paramete
 
 ### Tokens
 
-These are tokens you can use in the format of your progress bar.
+These are tokens you can use in the format of your **finite** progress bar.
 
 - `:bar` the progress bar itself
 - `:current` current tick number
@@ -60,7 +77,7 @@ These are tokens you can use in the format of your progress bar.
 - `:percent` completion percentage
 - `:eta` estimated completion time in seconds
 
-These are tokens you can use in the format of your infinite progress bar.
+These are tokens you can use in the format of your **infinite** progress bar.
 
 - `:rotary` simulates a rotary motion with `| / - \ |`
 - `:message` a custom message to display (default: 'Loading')
