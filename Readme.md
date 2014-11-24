@@ -25,6 +25,25 @@ var timer = setInterval(function () {
 }, 100);
 ```
 
+If you decide to use a infinite progress bar, you need to just use the `start` and `finish` methods as shown below.
+
+```javascript
+var ProgressBar = require('progress');
+
+var bar = new ProgressBar(':rotary :message :ellipsis', { infinite : true });
+
+bar.start({
+  message : 'Waiting for device',
+  tick : 200,
+  longWaitMessage : 'Please insert a device!',
+  longWaitTick : 2000
+});
+
+setTimeout(function() {
+  bar.finish();
+}, 6000);
+```
+
 ### Options
 
 These are keys in the options object you can pass to the progress bar along with
@@ -38,9 +57,18 @@ These are keys in the options object you can pass to the progress bar along with
 - `clear` option to clear the bar on completion defaulting to false
 - `callback` optional function to call when the progress bar completes
 
+It is also possible to create a infinite progress bar. To do so, you need to pass a `infinite` boolean on options.
+
+For infinite progress bar, the `start` method can receive the following parameters.
+
+- `message` the message to be displayed (if you use `:message` format)
+- `tick` the refresh rate of the progress bar
+- `longWaitMessage` a message to be shown after a long wait
+- `longWaitTick` the amount of time that you need to wait until the message is displayed
+
 ### Tokens
 
-These are tokens you can use in the format of your progress bar.
+These are tokens you can use in the format of your **finite** progress bar.
 
 - `:bar` the progress bar itself
 - `:current` current tick number
@@ -48,6 +76,12 @@ These are tokens you can use in the format of your progress bar.
 - `:elapsed` time elapsed in seconds
 - `:percent` completion percentage
 - `:eta` estimated completion time in seconds
+
+These are tokens you can use in the format of your **infinite** progress bar.
+
+- `:rotary` simulates a rotary motion with `| / - \ |`
+- `:message` a custom message to display (default: 'Loading')
+- `:ellipsis` an ellipsis animation `. .. ... ....`
 
 ## Examples
 
