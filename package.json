@@ -13,6 +13,10 @@
           "name": "Jordan Scales"
         , "email": "scalesjordan@gmail.com"
       }
+    , {
+          "name": "Cyril Mizzi"
+          "email": "cyril@lesiteimmo.com"
+      }
   ]
   , "dependencies": {}
   , "main": "index"
