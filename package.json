@@ -15,7 +15,7 @@
       }
     , {
           "name": "Cyril Mizzi"
-          "email": "cyril@lesiteimmo.com"
+        , "email": "cyril@lesiteimmo.com"
       }
   ]
   , "dependencies": {}
