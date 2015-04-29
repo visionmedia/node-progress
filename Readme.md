@@ -35,6 +35,7 @@ These are keys in the options object you can pass to the progress bar along with
 - `stream` the output stream defaulting to stderr
 - `complete` completion character defaulting to "="
 - `incomplete` incomplete character defaulting to "-"
+- `renderDelay` minimum time between updates in milliseconds defaulting to 50
 - `clear` option to clear the bar on completion defaulting to false
 - `callback` optional function to call when the progress bar completes
 
