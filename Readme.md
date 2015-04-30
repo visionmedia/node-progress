@@ -34,6 +34,7 @@ These are keys in the options object you can pass to the progress bar along with
 - `width` the displayed width of the progress bar defaulting to total
 - `stream` the output stream defaulting to stderr
 - `complete` completion character defaulting to "="
+- `cursor` last completion character defaulting to complete
 - `incomplete` incomplete character defaulting to "-"
 - `renderThrottle` minimum time between updates in milliseconds defaulting to 16
 - `clear` option to clear the bar on completion defaulting to false
@@ -96,6 +97,7 @@ req.on('response', function(res){
   console.log();
   var bar = new ProgressBar('  downloading [:bar] :percent :etas', {
     complete: '=',
+    cursor: '>',
     incomplete: ' ',
     width: 20,
     total: len
@@ -116,7 +118,7 @@ req.end();
 The above example result in a progress bar like the one below.
 
 ```
-downloading [=====             ] 29% 3.7s
+downloading [====>             ] 29% 3.7s
 ```
 
 You can see more examples in the `examples` folder.
