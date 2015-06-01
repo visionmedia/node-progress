@@ -18,4 +18,5 @@
   , "main": "index"
   , "engines": { "node": ">=0.4.0" }
   , "repository": "git://github.com/visionmedia/node-progress"
+  , "license": "MIT"
 }
