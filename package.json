@@ -13,8 +13,12 @@
           "name": "Jordan Scales"
         , "email": "scalesjordan@gmail.com"
       }
+    , {
+          "name": "Marcelo Boeira"
+        , "email": "me@marceloboeira.com"
+      }  
   ]
-  , "dependencies": {}
+  , "dependencies": {"ms": ">=0.6.2"}
   , "main": "index"
   , "engines": { "node": ">=0.4.0" }
   , "repository": "git://github.com/visionmedia/node-progress"
