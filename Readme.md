@@ -52,7 +52,7 @@ These are tokens you can use in the format of your progress bar.
 
 ### Custom Tokens
 
-You can define custom tokens by adding a `{'name': value}` object paramater to your method (`tick()`, `update()`, etc.) calls.
+You can define custom tokens by adding a `{'name': value}` object parameter to your method (`tick()`, `update()`, etc.) calls.
 
 ```javascript
 var bar = new ProgressBar(':current: :token1 :token2', { total: 3 })
