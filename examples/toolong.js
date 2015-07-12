@@ -7,7 +7,7 @@ var ProgressBar = require('../');
 
 // simulated download, passing the chunk lengths to tick()
 
-var bar = new ProgressBar('  downloading [:bar] :percent :etas', {
+var bar = new ProgressBar('  downloading [:bar] :percent :eta', {
     complete: '='
   , incomplete: ' '
   , width: 1024     /* something longer than the terminal width */
