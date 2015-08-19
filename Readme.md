@@ -37,6 +37,7 @@ These are keys in the options object you can pass to the progress bar along with
 - `incomplete` incomplete character defaulting to "-"
 - `renderThrottle` minimum time between updates in milliseconds defaulting to 16
 - `clear` option to clear the bar on completion defaulting to false
+- `format` optional function to format tick numbers
 - `callback` optional function to call when the progress bar completes
 
 ### Tokens
@@ -79,10 +80,12 @@ The above example would result in the output below.
 In our download example each tick has a variable influence, so we pass the chunk
 length which adjusts the progress bar appropriately relative to the total
 length.
+`bytes` module is used to format tick numbers to human-readable file sizes.
 
 ```javascript
 var ProgressBar = require('../');
 var https = require('https');
+var bytes = require('bytes');
 
 var req = https.request({
   host: 'download.github.com',
@@ -94,9 +97,10 @@ req.on('response', function(res){
   var len = parseInt(res.headers['content-length'], 10);
 
   console.log();
-  var bar = new ProgressBar('  downloading [:bar] :percent :etas', {
+  var bar = new ProgressBar('  downloading [:bar] :percent :current/:total :etas', {
     complete: '=',
     incomplete: ' ',
+    format: bytes,
     width: 20,
     total: len
   });
@@ -116,7 +120,7 @@ req.end();
 The above example result in a progress bar like the one below.
 
 ```
-downloading [=====             ] 29% 3.7s
+downloading [=====             ] 29% 2.70kB/9.31kB 3.7s
 ```
 
 You can see more examples in the `examples` folder.
