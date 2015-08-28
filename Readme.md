@@ -76,7 +76,7 @@ The above example would result in the output below.
 
 ### Multiple bars
 
-Use the [multi-progress module](github.com/pitaj/multi-progress), an abstraction over the `progress` API which allows for the use of multiple progress bars.
+Use the [multi-progress module](https://github.com/pitaj/multi-progress), an abstraction over the `progress` API which allows for the use of multiple progress bars.
 
 Example usage of `multi-progress`
 
