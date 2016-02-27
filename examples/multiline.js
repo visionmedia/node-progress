@@ -13,7 +13,6 @@ var tickId = setInterval(tick, 20);
 
 function tick() {
 	if(count === 99) {
-		bar.terminate();
 		clearInterval(tickId);
 
 		setTimeout(console.log.bind(console, '\nDone!'), 21);
