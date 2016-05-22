@@ -26,7 +26,7 @@ function forward() {
 function backward() {
   bar.tick(-1, { title: 'backward' });
   if (bar.curr == 0) {
-    bar.terminate();
+    bar.done();
   } else {
     setTimeout(backward, 20);
   }
