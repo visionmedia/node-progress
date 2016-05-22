@@ -1,11 +1,9 @@
 /**
- * An example to show how node-progress handles user-specified widths
- * which exceed the number of columns in the terminal
+ * An example to show how node-progress handles progress bar
+ * with unknown total number of ticks
  */
 
 var ProgressBar = require('../');
-
-// simulated download, passing the chunk lengths to tick()
 
 var bar = new ProgressBar(' [:wheel][:bar] :current/:total :elapseds :percent :etas', {
     complete: '='
