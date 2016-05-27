@@ -81,7 +81,7 @@ length which adjusts the progress bar appropriately relative to the total
 length.
 
 ```javascript
-var ProgressBar = require('../');
+var ProgressBar = require('progress');
 var https = require('https');
 
 var req = https.request({
