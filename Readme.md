@@ -30,6 +30,7 @@ var timer = setInterval(function () {
 These are keys in the options object you can pass to the progress bar along with
 `total` as seen in the example above.
 
+- `curr` current completed index
 - `total` total number of ticks to complete
 - `width` the displayed width of the progress bar defaulting to total
 - `stream` the output stream defaulting to stderr
