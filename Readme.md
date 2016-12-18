@@ -1,5 +1,8 @@
 Flexible ascii progress bar.
 
+[![NPM version](https://img.shields.io/npm/v/progress.svg)](https://www.npmjs.org/package/progress)
+
+
 ## Installation
 
 ```bash
