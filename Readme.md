@@ -124,7 +124,7 @@ downloading [=====             ] 39/bps 29% 3.7s
 
 ### Interrupt
 
-To display a message during progress bar execution, use `interupt()`
+To display a message during progress bar execution, use `interrupt()`
 ```javascript
 var ProgressBar = require('progress');
 
