@@ -4,7 +4,7 @@
  * progress intact
  */
 
-var ProgressBar = require('progress');
+var ProgressBar = require('../');
 
 var bar = new ProgressBar(':bar :current/:total', { total: 10 });
 var timer = setInterval(function () {
@@ -15,4 +15,3 @@ var timer = setInterval(function () {
         bar.interrupt('interrupt: current progress is ' + bar.curr + '/' + bar.total);
     }
 }, 1000);
-
