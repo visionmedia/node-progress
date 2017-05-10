@@ -46,6 +46,7 @@ These are keys in the options object you can pass to the progress bar along with
 These are tokens you can use in the format of your progress bar.
 
 - `:bar` the progress bar itself
+- `:wheel` rotating progress indicator
 - `:current` current tick number
 - `:total` total ticks
 - `:elapsed` time elapsed in seconds
