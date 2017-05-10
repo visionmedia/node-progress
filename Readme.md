@@ -48,9 +48,9 @@ These are tokens you can use in the format of your progress bar.
 - `:bar` the progress bar itself
 - `:current` current tick number
 - `:total` total ticks
-- `:elapsed` time elapsed in seconds
+- `:elapsed` time elapsed in hours, minutes and seconds
 - `:percent` completion percentage
-- `:eta` estimated completion time in seconds
+- `:eta` estimated completion time in hours, minutes and seconds
 - `:rate` rate of ticks per second
 
 ### Custom Tokens
@@ -97,7 +97,7 @@ req.on('response', function(res){
   var len = parseInt(res.headers['content-length'], 10);
 
   console.log();
-  var bar = new ProgressBar('  downloading [:bar] :rate/bps :percent :etas', {
+  var bar = new ProgressBar('  downloading [:bar] :rate/bps :percent :eta', {
     complete: '=',
     incomplete: ' ',
     width: 20,
