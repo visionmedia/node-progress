@@ -77,6 +77,39 @@ The above example would result in the output below.
 
 ## Examples
 
+### Multiple bars
+
+Use the [multi-progress module](https://github.com/pitaj/multi-progress), an abstraction over the `progress` API which allows for the use of multiple progress bars.
+
+Example usage of `multi-progress`
+
+```js
+// require the library
+var Multiprogress = require("multi-progress");
+
+// spawn an instance with the optional stream to write to
+// use of `new` is optional
+var multi = new Multiprogress(process.stderr);
+
+// create a progress bar
+var bar = multi.newBar('  downloading cat.jpg [:bar] :percent :etas', {
+  complete: '=',
+  incomplete: ' ',
+  width: 30,
+  total: size
+});
+
+var bar2 = multi.newBar('  downloading dog.jpg [:bar] :percent :etas', {
+  complete: '=',
+  incomplete: ' ',
+  width: 30,
+  total: size
+});
+
+// `bar` and `bar2` are instances of ProgressBar
+// Use the progressbar API with them
+```
+
 ### Download
 
 In our download example each tick has a variable influence, so we pass the chunk
