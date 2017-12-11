@@ -39,8 +39,8 @@ These are keys in the options object you can pass to the progress bar along with
 - `incomplete` incomplete character defaulting to "-"
 - `renderThrottle` minimum time between updates in milliseconds defaulting to 16
 - `clear` option to clear the bar on completion defaulting to false
-- `callback` optional function to call when the progress bar completes
 - `forceTTY` optional boolean (true|false) to force stderr to be TTY. This allows the bar output to be redirected or use tee.
+- `callback` optional function to call when the progress bar completes
 
 ### Tokens
 
