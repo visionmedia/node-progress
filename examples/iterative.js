@@ -6,7 +6,7 @@
 var ProgressBar = require('../');
 
 var len = 10000000; // Adjust to your machine's speed
-var bar = new ProgressBar('[:bar]', len);
+var bar = new ProgressBar('[:bar]', {total: len, renderThrottle: 100});
 
 for (var i = 0; i <= len; i++) {
   bar.tick();
