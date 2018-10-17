@@ -14,7 +14,8 @@
   "contributors": [
     "Christoffer Hallas <christoffer.hallas@gmail.com>",
     "Jordan Scales <scalesjordan@gmail.com>",
-    "Andrew Rhyne <rhyneandrew@gmail.com>"
+    "Andrew Rhyne <rhyneandrew@gmail.com>",
+    "Marco Brack <PapstDonB@Googlemail.com>"
   ],
   "dependencies": {},
   "main": "./index.js",
