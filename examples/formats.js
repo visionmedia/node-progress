@@ -64,7 +64,7 @@ function bar4() {
 }
 
 function bar5() {
-  var bar = new ProgressBar('  [:bar] :elapseds elapsed, eta :etas', {
+  var bar = new ProgressBar('  [:bar] :elapsed elapsed, eta :eta', {
       width: 8
     , total: 50
   });
