@@ -139,6 +139,15 @@ var timer = setInterval(function () {
 }, 1000);
 ```
 
+It's also possible to start and stop interrupts manually, allowing synchronous
+logging between through the `interruptBegin` and `interruptEnd` methods:
+
+```js
+bar.interruptBegin();
+console.log('message');
+bar.interruptEnd();
+```
+
 You can see more examples in the `examples` folder.
 
 ## License
