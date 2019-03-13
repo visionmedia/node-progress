@@ -41,6 +41,15 @@ These are keys in the options object you can pass to the progress bar along with
 - `clear` option to clear the bar on completion defaulting to false
 - `callback` optional function to call when the progress bar completes
 
+### Methods
+
+These are methods you can call on the progress bar.
+
+- `tick` tick the progress bar
+- `render` render the progress bar
+- `update` update the progress bar to an exact percentage
+- `interrupt` write a message aboute the progress bar
+
 ### Tokens
 
 These are tokens you can use in the format of your progress bar.
