@@ -103,7 +103,7 @@ req.on('response', function(res){
     incomplete: ' ',
     width: 20,
     total: len,
-    humanFriendlyRate" true
+    humanFriendlyRate: true
   });
 
   res.on('data', function (chunk) {
