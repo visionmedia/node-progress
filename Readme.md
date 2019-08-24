@@ -40,6 +40,7 @@ These are keys in the options object you can pass to the progress bar along with
 - `renderThrottle` minimum time between updates in milliseconds defaulting to 16
 - `clear` option to clear the bar on completion defaulting to false
 - `callback` optional function to call when the progress bar completes
+- `humanFriendlyRate` will show download rate in KB/s insteaf of B/s.
 
 ### Tokens
 
@@ -97,11 +98,12 @@ req.on('response', function(res){
   var len = parseInt(res.headers['content-length'], 10);
 
   console.log();
-  var bar = new ProgressBar('  downloading [:bar] :rate/bps :percent :etas', {
+  var bar = new ProgressBar('  downloading [:bar] :rate :percent :etas', {
     complete: '=',
     incomplete: ' ',
     width: 20,
-    total: len
+    total: len,
+    humanFriendlyRate: true
   });
 
   res.on('data', function (chunk) {
