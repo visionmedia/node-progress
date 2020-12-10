@@ -40,6 +40,7 @@ These are keys in the options object you can pass to the progress bar along with
 - `renderThrottle` minimum time between updates in milliseconds defaulting to 16
 - `clear` option to clear the bar on completion defaulting to false
 - `callback` optional function to call when the progress bar completes
+- `isRtlOn` a boolean value that indicates if the bar's direction should progress from right to the left direction (default: `false`).
 
 ### Tokens
 
