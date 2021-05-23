@@ -51,6 +51,7 @@ These are tokens you can use in the format of your progress bar.
 - `:elapsed` time elapsed in seconds
 - `:percent` completion percentage
 - `:eta` estimated completion time in seconds
+- `:veta` (verbose eta) estimated completion time in hours, minutes and seconds
 - `:rate` rate of ticks per second
 
 ### Custom Tokens
