@@ -3,7 +3,7 @@ Flexible ascii progress bar.
 ## Installation
 
 ```bash
-$ npm install progress
+npm install progress
 ```
 
 ## Usage
